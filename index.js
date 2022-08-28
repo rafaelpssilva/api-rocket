@@ -9,7 +9,16 @@ app.use(
 
 app.use(express.json());
 
-const products = [];
+const products = [
+    {
+        name: "fresh fries",
+        price: 1222,
+    },
+    {
+        name: "fresh fries",
+        price: 1222,
+    },
+];
 
 app.get("/food", (req, res) => {
     return res.json(products);
